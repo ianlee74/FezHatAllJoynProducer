@@ -1,0 +1,11 @@
+
+<node name="/com/ianlee/fezhat">
+  <interface name="com.ianlee.fezHat">
+    <method name="switchD2">
+      <arg name="on" type="b" direction="in"/>
+    </method>
+    <method name="switchD3">
+      <arg name="on" type="b" direction="in"/>
+    </method>
+  </interface>
+</node>
