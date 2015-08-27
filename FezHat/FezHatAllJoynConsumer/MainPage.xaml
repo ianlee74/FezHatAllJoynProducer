@@ -7,7 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <StackPanel>
+        <TextBlock HorizontalAlignment="Center" FontSize="24" FontWeight="Bold">FEZ HAT AllJoyn</TextBlock>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Image x:Name="image" HorizontalAlignment="Left" VerticalAlignment="Top" Source="Assets/FezHat.jpg" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="-1,30,0,0"/>
+            <Rectangle x:Name="ledD2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="128,149,0,471" Stroke="White" Width="19" RenderTransformOrigin="1.421,-7.517"/>
+            <Rectangle x:Name="ledD3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="128,179,0,441" Stroke="White" Width="19" RenderTransformOrigin="1.421,-7.517"/>
+            <Rectangle x:Name="ledDIO24" Fill="#FFF4F4F5" HorizontalAlignment="Left" Margin="263,96,0,538" Stroke="White" Width="9" RenderTransformOrigin="1.421,-7.517"/>
+        </Grid>
+        <ToggleSwitch x:Name="uiRedLedSwitch" Header="Red LED Status" OnContent="LED On" OffContent="LED Off" Toggled="RedLedSwitch_OnToggled"/>
+    </StackPanel>
 </Page>
